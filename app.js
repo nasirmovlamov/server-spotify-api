@@ -19,7 +19,7 @@ const authOptions = {
   json: true,
 };
 
-app.get("/spotify_token", async (req, res) => {
+app.get("/", async (req, res) => {
   request.post(authOptions, function (error, response, body) {
     if (!error && response.statusCode === 200) {
       const token = body.access_token;
