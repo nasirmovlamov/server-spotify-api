@@ -2,10 +2,10 @@ const request = require("request");
 const express = require("express");
 const cors = require("cors");
 
+const app = express();
+
 //allow cross origin requests from any domain
 app.use(cors());
-
-const app = express();
 
 const client_id = "55a3676e8327405db7edde8b0970749e";
 const client_secret = "40701a0bab784b11b6e42e6d8801b8b6";
