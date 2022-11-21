@@ -15,7 +15,7 @@ const authOptions = {
   headers: {
     Authorization:
       "Basic " +
-      Buffer.from(client_id + ":" + client_secret).toString("base64"),
+      new Buffer(client_id + ":" + client_secret).toString("base64"),
   },
   form: {
     grant_type: "client_credentials",
