@@ -14,11 +14,11 @@ const authOptions = {
   url: "https://accounts.spotify.com/api/token",
   headers: {
     Authorization:
-      "Basic " +
-      new Buffer(client_id + ":" + client_secret).toString("base64"),
+      "Basic " + new Buffer(client_id + ":" + client_secret).toString("base64"),
   },
   form: {
     grant_type: "client_credentials",
+    scope:"user-modify-playback-state user-read-playback-state user-read-currently-playing user-read-recently-played",
   },
   json: true,
 };
