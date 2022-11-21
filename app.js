@@ -1,5 +1,9 @@
 const request = require("request");
 const express = require("express");
+const cors = require("cors");
+
+//allow cross origin requests from any domain
+app.use(cors());
 
 const app = express();
 
